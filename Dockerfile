@@ -65,11 +65,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/LaylaRobot
-RUN git clone -b shiken https://github.com/QueenArzoo/LaylaRobot /root/LaylaRobot
-WORKDIR /root/LaylaRobot
+RUN git clone -b shiken https://github.com/KINGOFASURA/XROBOT /root/XROBOT
+WORKDIR /root/XROBOT
 
-#Copy config file to /root/LaylaRobot/LaylaRobot
-COPY ./LaylaRobot/sample_config.py ./LaylaRobot/config.py* /root/LaylaRobot/LaylaRobot/
+#Copy config file to /root/XROBOT/XROBOT
+COPY ./XROBOT/sample_config.py ./XROBOT/config.py* /root/XROBOT/XROBOT/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","LaylaRobot"]
+CMD ["python3","-m","XROBOT"]
