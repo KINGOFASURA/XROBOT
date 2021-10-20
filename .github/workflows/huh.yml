@@ -19,7 +19,7 @@ jobs:
 
         with:
 
-          find: "LylaRobot"
+          find: "LaylaRobot"
 
           replace: "XROBOT"
 
