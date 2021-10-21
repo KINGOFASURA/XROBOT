@@ -47,7 +47,7 @@ en_chats = []
 )
 @admins_only
 async def hmm(_, message):
-    global layla_chats
+    global XROBOT_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -62,7 +62,7 @@ async def hmm(_, message):
             await lel.edit("XROBOT AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"layla AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"XROBOT AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
