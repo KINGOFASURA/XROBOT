@@ -11,10 +11,10 @@ import aiohttp
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from LaylaRobot import BOT_ID
-from LaylaRobot.helper_extra.aichat import add_chat, get_session, remove_chat
-from LaylaRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from LaylaRobot import pbot as layla
+from XROBOT import BOT_ID
+from XROBOT.helper_extra.aichat import add_chat, get_session, remove_chat
+from XROBOT.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from XROBOT import pbot as layla
 
 translator = google_translator()
 import requests
