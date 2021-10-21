@@ -9,7 +9,7 @@ from XROBOT import OWNER_ID, DEV_USERS
 from XROBOT import TEMP_DOWNLOAD_DIRECTORY as path
 from XROBOT import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './LaylaRobot/resources/yone.jpg'
+water = './XROBOT/resources/yone.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
