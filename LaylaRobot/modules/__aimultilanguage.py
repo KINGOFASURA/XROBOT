@@ -14,7 +14,7 @@ from pyrogram import filters
 from XROBOT import BOT_ID
 from XROBOT.helper_extra.aichat import add_chat, get_session, remove_chat
 from XROBOT.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from XROBOT import pbot as layla
+from XROBOT import pbot as XROBOT
 
 translator = google_translator()
 import requests
@@ -39,10 +39,10 @@ async def fetch(url):
         return
 
 
-layla_chats = []
+XROBOT_chats = []
 en_chats = []
 
-@layla.on_message(
+@XROBOT.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
@@ -59,7 +59,7 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("layla AI Already Activated In This Chat")
+            await lel.edit("XROBOT AI Already Activated In This Chat")
             return
         await lel.edit(
             f"layla AI Successfully Added For Users In The Chat {message.chat.id}"
